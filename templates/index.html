@@ -1,0 +1,25 @@
+<form method="get" action="">
+    {% csrf_token %}
+    <input type="number" name="search_text">
+    <button type="submit">Search</button>
+</form>
+
+
+<table>
+    <tr>
+      <th>IEN</th>
+      <th>Name</th>
+      <th>Branch</th>
+      <th>Attendance</th>
+      <th>Date</th>
+    </tr>
+    {% for student in students %}
+    <tr>
+      <td>{{student.ien}}</td>
+      <td>{{student.name}}</td>
+      <td>{{student.branch}}</td>
+      <td>{{student.attendence}}</td>
+      <td>{{student.date}}</td>
+    </tr>
+    {% endfor %}
+</table>

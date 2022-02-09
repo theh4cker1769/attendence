@@ -17,13 +17,12 @@ body {
       margin: 0;
       padding: 0;
   }
-.search{
-  max-width: 100px;
-  font-size: 0.5rem;
-  
-
-
+  .navbar{
+    padding: 1rem 30rem;
+    font-size: 0.7rem;
+    font-weight: 900;
   }
+
   table {
     border-collapse: collapse;
     box-shadow: 0 5px 10px #e1e5ee;
@@ -35,7 +34,7 @@ body {
     box-shadow: 0 5px 10px #e1e5ee;
   }
   table th {
-    padding: 4rem 5rem;
+    padding: 4rem 3rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
     font-size: 0.7rem;

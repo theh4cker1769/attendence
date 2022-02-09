@@ -1,64 +1,69 @@
-/*   color variables */
-/*   border radius */
-
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
 
 body {
-    font-family: Mukta, sans-serif;
-    height: 100vh;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    color: #4f546c;
-    font-size: 0.5rem;
-    background-color: #f9fbff;
-  }
-  body::after {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-  }
-  .navbar{
-    padding: 1rem 30rem;
-    font-size: 0.7rem;
-    font-weight: 900;
-  }
+  height: 100vh;
+  display: block;
+  justify-content: center;  
+  align-items: center;
+  color: #4f546c;
+  font-size: 0.9rem;
+  background-color: #f9fbff;
+}
+body::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.btn2{
+  background: none;
+  padding: 0.5rem 2rem;
+}
+.btn2:hover{
+  background: transparent;
+  color: #f9fbff;
+}
+.hero-btn{
+  background: white;
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+}
+.hero-btn:hover{
+  border: 1px solid blanchedalmond;
+  background: green;
+  transition: 1s;
+  padding: 0.5rem 2rem;
+}
+.red-btn{
+  border: 1px solid blanchedalmond;
+  background: white;
+  color: white;
+  transition: 1s;
+  padding: 0.5rem 2rem;
+}
+.red-btn:hover{
+  color: whitesmoke;
+  padding: 0.5rem 2rem;
+}
+.Show-data{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:none no-repeat center center fixed;
+  background-size: cover;
+  padding: 30px;
+}
+.container{
+  position: relative;
+  max-width: 850px;
+  width: 100%;
+  background: #fff;
+  padding: 40px 30px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  perspective: 2700px;
+}
 
-  table {
-    border-collapse: collapse;
-    box-shadow: 0 5px 10px #e1e5ee;
-    background-color: white;
-    text-align: left;
-    overflow: hidden;
-  }
-  table thead {
-    box-shadow: 0 5px 10px #e1e5ee;
-  }
-  table th {
-    padding: 4rem 3rem;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-    font-size: 0.7rem;
-    font-weight: 900;
-  }
-  table td {
-    padding: 2rem 5rem;
-  }
-  
-  table .status {
-    border-radius: 0.2rem;
-    background-color: red;
-    padding: 0.2rem 1rem;
-    text-align: center;
-  }
-  
-  table .status-present {
-    background-color: #c8e6c9;
-    color: #388e3c;
-  }
-  table .status-absent {
-    background-color: #ffcdd2;
-    color: #c62828;
-  }
-  table tr:nth-child(even) {
-    background-color: #f4f6fb;
-  }

@@ -1,5 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css"
+  rel="stylesheet"
+/>
+
+
+  <title>Upload CSV</title>
+</head>
+
+<!--- Upload Starts-->
+<body>
+    {% block content %}
+    <section class="Upload-data">
+        <div class="container2 shadow-lg p-3 mb-5 bg-body rounded">
 <form method="post" enctype="multipart/form-data">
+    
     {% csrf_token %}
-    <input type="file" name="myfile">
-    <button type="submit">Upload</button>
+    
+    <input class="input" type="file" name="myfile">
+    <button type="submit" class="btn2">Upload</button>
 </form>
+</div>
+</div>
+</section>
+    {% endblock %}
+</body>
+<!--- Upload Ends-->
+</html>

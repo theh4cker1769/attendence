@@ -1,8 +1,8 @@
 from django.shortcuts import render
 from .models import Student
 from django.contrib import messages
-from django.db.models import Q
 from tablib import Dataset
+from .filter import StudentFilter
 
 # Create your views here.
 
@@ -36,9 +36,14 @@ def index(request):
         q = ''
 
     students = Student.objects.filter(ien__icontains=q)
-    
-    # if request.method == 'POST':
-    #     search_text = request.POST['search_text']
-    #     students = Student.objects.filter(ien__icontains=search_text)
+
+    # students = Student.objects.all()
+
+    # studentFilter = StudentFilter(request.GET, queryset=students)
+    # students = studentFilter.qs  
+      
+    if request.method == 'POST':
+        search_text = request.POST['search_text']
+        students = Student.objects.filter(ien__icontains=search_text)
     
     return render(request, 'index.html', {'students': students})

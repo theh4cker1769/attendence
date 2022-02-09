@@ -18,14 +18,7 @@ body::after {
     margin: 0;
     padding: 0;
 }
-.btn2{
-  background: none;
-  padding: 0.5rem 2rem;
-}
-.btn2:hover{
-  background: transparent;
-  color: #f9fbff;
-}
+
 .hero-btn{
   background: white;
   cursor: pointer;
@@ -57,6 +50,24 @@ body::after {
   background-size: cover;
   padding: 30px;
 }
+
+.Upload-data{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  padding: 30px;
+}
+.container2{
+  position: center;
+  max-width: 350px;
+  width: 50%;
+  background: #fff;
+  padding: 40px 30px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  perspective: 2700px;
+}
 .container{
   position: relative;
   max-width: 850px;
@@ -65,5 +76,13 @@ body::after {
   padding: 40px 30px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
   perspective: 2700px;
+}
+.btn2{
+  background: none;
+  padding: 0.5rem 2rem;
+}
+.btn2:hover{
+  background: white;
+  color: black;
 }
 
